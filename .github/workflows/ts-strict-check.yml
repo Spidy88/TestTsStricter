@@ -1,0 +1,12 @@
+name: Compare TSC Errors
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  compare-tsc-errors:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Compare TSC on HEAD vs BASE
+        uses: thinkdx/ts-stricter@v1
