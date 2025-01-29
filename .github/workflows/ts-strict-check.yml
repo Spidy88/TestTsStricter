@@ -8,5 +8,16 @@ jobs:
   compare-tsc-errors:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out HEAD
+        uses: actions/checkout@v3
+        with:
+          # Pull Request context: we want to check out the PR head commit
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
       - name: Compare TSC on HEAD vs BASE
         uses: thinkdx/ts-stricter@v1
