@@ -1,5 +1,5 @@
 {
-  "name": "testtsstricter",
+  "name": "testtsstricter-a",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -10,9 +10,5 @@
   "description": "",
   "dependencies": {
     "typescript": "^5.7.3"
-  },
-  "workspaces": [
-    "packageA",
-    "packageB"
-  ]
+  }
 }
