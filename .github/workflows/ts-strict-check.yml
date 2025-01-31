@@ -20,4 +20,4 @@ jobs:
           node-version: '18'
 
       - name: Compare TSC on HEAD vs BASE
-        uses: thinkdx/ts-stricter@v1
+        uses: thinkdx/ts-stricter@next
